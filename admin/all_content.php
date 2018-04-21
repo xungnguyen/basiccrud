@@ -23,7 +23,10 @@ include('../db.php');
   <tr>
     <td><?php echo $row['title']; ?></td>
     <td><?php echo $row['text']; ?></td>
-    <td><a href="edit_content.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+    <td>
+      <a href="edit_content.php?id=<?php echo $row['id']; ?>">Edit</a>
+      <a href="delete.php?id=<?php echo $row['id']; ?>">Delete</a> 
+    </td>
   </tr>
 <?php } ?>
 </table>
